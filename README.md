@@ -115,6 +115,18 @@ VITE_API_URL=http://localhost:8000/api
 | Instructor | james@eduflow.com         | Pass@123   |
 | Student    | student1@eduflow.com      | Pass@123   |
 
+### Load Demo Data
+
+Demo JSON is available in `backend/lms_core/fixtures/demo_data.json`.
+
+```bash
+cd backend
+python manage.py migrate
+python manage.py seed_demo_data
+```
+
+This command creates/updates users, categories, courses, and enrollments from the JSON file.
+
 ---
 
 ## API Endpoints

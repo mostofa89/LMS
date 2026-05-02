@@ -1,0 +1,146 @@
+{
+    "users": [
+        {
+            "email": "admin@eduflow.com",
+            "first_name": "System",
+            "last_name": "Admin",
+            "role": "admin",
+            "is_staff": true,
+            "is_superuser": true,
+            "is_email_verified": true,
+            "password": "Admin@123"
+        },
+        {
+            "email": "sarah@eduflow.com",
+            "first_name": "Sarah",
+            "last_name": "Khan",
+            "role": "instructor",
+            "is_staff": false,
+            "is_superuser": false,
+            "is_email_verified": true,
+            "expertise": "Web Development, Django",
+            "password": "Pass@123"
+        },
+        {
+            "email": "james@eduflow.com",
+            "first_name": "James",
+            "last_name": "Miller",
+            "role": "instructor",
+            "is_staff": false,
+            "is_superuser": false,
+            "is_email_verified": true,
+            "expertise": "Data Science, Python",
+            "password": "Pass@123"
+        },
+        {
+            "email": "student1@eduflow.com",
+            "first_name": "Ava",
+            "last_name": "Rahman",
+            "role": "student",
+            "is_staff": false,
+            "is_superuser": false,
+            "is_email_verified": true,
+            "password": "Pass@123"
+        }
+    ],
+    "categories": [
+        {
+            "slug": "web-development",
+            "name": "Web Development",
+            "description": "Frontend and backend web development courses.",
+            "icon": "laptop"
+        },
+        {
+            "slug": "data-science",
+            "name": "Data Science",
+            "description": "Data analysis, ML, and AI fundamentals.",
+            "icon": "chart"
+        },
+        {
+            "slug": "design",
+            "name": "Design",
+            "description": "UI/UX and design systems.",
+            "icon": "palette"
+        },
+        {
+            "slug": "cloud-devops",
+            "name": "Cloud & DevOps",
+            "description": "Cloud deployment, CI/CD, and infrastructure.",
+            "icon": "cloud"
+        }
+    ],
+    "courses": [
+        {
+            "slug": "django-rest-api-mastery",
+            "title": "Django REST API Mastery",
+            "description": "Build secure and scalable APIs with Django REST Framework.",
+            "short_description": "DRF from basics to production-ready architecture.",
+            "category_slug": "web-development",
+            "instructor_email": "sarah@eduflow.com",
+            "level": "intermediate",
+            "status": "published",
+            "price": "49.00",
+            "duration_hours": 24,
+            "prerequisites": "Basic Python",
+            "what_you_learn": "Serializers, ViewSets, JWT auth, filtering, pagination"
+        },
+        {
+            "slug": "react-vite-tailwind",
+            "title": "React + Vite + Tailwind Bootcamp",
+            "description": "Create fast modern frontends with reusable UI patterns.",
+            "short_description": "Production-ready React frontend setup.",
+            "category_slug": "web-development",
+            "instructor_email": "sarah@eduflow.com",
+            "level": "beginner",
+            "status": "published",
+            "price": "39.00",
+            "duration_hours": 18,
+            "prerequisites": "Basic HTML/CSS",
+            "what_you_learn": "Routing, state, API integration, responsive UI"
+        },
+        {
+            "slug": "python-for-data-analysis",
+            "title": "Python for Data Analysis",
+            "description": "Analyze real-world datasets using pandas and visualization tools.",
+            "short_description": "Hands-on data analysis with Python.",
+            "category_slug": "data-science",
+            "instructor_email": "james@eduflow.com",
+            "level": "beginner",
+            "status": "published",
+            "price": "45.00",
+            "duration_hours": 20,
+            "prerequisites": "Basic Python",
+            "what_you_learn": "pandas, charting, data cleaning, reporting"
+        },
+        {
+            "slug": "ml-foundations",
+            "title": "Machine Learning Foundations",
+            "description": "Understand core ML concepts and build your first models.",
+            "short_description": "Intro to practical machine learning workflows.",
+            "category_slug": "data-science",
+            "instructor_email": "james@eduflow.com",
+            "level": "intermediate",
+            "status": "published",
+            "price": "59.00",
+            "duration_hours": 30,
+            "prerequisites": "Python for Data Analysis",
+            "what_you_learn": "classification, regression, validation, feature engineering"
+        }
+    ],
+    "enrollments": [
+        {
+            "student_email": "student1@eduflow.com",
+            "course_slug": "django-rest-api-mastery",
+            "status": "active",
+            "is_active": true,
+            "progress": 35
+        },
+        {
+            "student_email": "student1@eduflow.com",
+            "course_slug": "python-for-data-analysis",
+            "status": "active",
+            "is_active": true,
+            "progress": 62
+        }
+    ]
+}
