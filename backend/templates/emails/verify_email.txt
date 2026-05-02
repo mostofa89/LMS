@@ -1,0 +1,11 @@
+Hi {{ user.first_name }},
+
+Welcome to EduFlow! Your email verification code is:
+
+{{ otp }}
+
+This code expires in {{ expiry_minutes }} minutes.
+
+If you didn't create an EduFlow account, ignore this email.
+
+— EduFlow Team

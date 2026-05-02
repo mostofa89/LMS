@@ -1,0 +1,6 @@
+@echo off
+cd /d "%~dp0backend"
+echo Activating virtual environment...
+call venv\Scripts\activate.bat
+echo Starting EduFlow Backend on http://localhost:8000 ...
+python manage.py runserver
